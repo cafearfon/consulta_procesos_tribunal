@@ -21,7 +21,7 @@ public class LinkFinder {
             for (Element element : elementsWithDataRk) {
                 // Muestra el texto y la URL del enlace
                 String dataRkValue = element.attr("data-rk");
-                if(element.text().contains("LABORAL") && cont < 25){
+                if(element.text().contains("LABORAL") && cont <=5){
                     System.out.println("data-rk: " + dataRkValue + " | Tag: " + element.tagName() + " | Texto: " + element.text());
                     lista.add(dataRkValue);
                     cont++;
